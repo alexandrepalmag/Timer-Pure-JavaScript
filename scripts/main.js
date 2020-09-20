@@ -1,18 +1,19 @@
-const btnStart = document.getElementById('start').addEventListener('click', () => {
-    timerC.start('clock')
-    btnDisabled()
-   
-})
-const btnPause = document.getElementById('pause').addEventListener('click', () => {
-    timerC.pause()
-})
-const btnClear = document.getElementById('clear').addEventListener('click', () => {
-    timerC.clear('clock')
-})
+document.addEventListener('click', e => {
 
-document.addEventListener('click', function(e) {
+    console.log(e.srcElement.id)
 
-    el = e.target
+    el = e.srcElement.id
 
-    
+    switch (el) {
+        case 'start': timerC.start('clock')
+            break
+
+        case 'pause': timerC.pause()
+            break
+
+        case 'clear': timerC.clear('clock')
+            break
+        
+        default: timerC.clear('clock')
+    }
 })
