@@ -8,6 +8,9 @@ html,body {
 }
 body {
     box-sizing: border-box;
+    background: url('../lib/img/timers.png'),
+                url('../lib/img/ruido.png'), 
+                linear-gradient(50deg,rgb(118, 121, 143),rgb(70, 153, 153));
 }
 
 /* ===============================
@@ -15,7 +18,8 @@ nav
 ================================== */
 .navbar-person {
     padding: 8px 0;
-    background-color: rgb(56, 134, 82);
+    /* background-color: rgb(56, 134, 82); */
+    background-color: rgba(0, 0, 0, 0.4);
 }
 #text-brand {
     color: rgb(236, 230, 230);
@@ -28,8 +32,24 @@ nav
 body
 ======================================*/
 #mainclass {
-    margin-top: 2rem;
+    margin-top: 3.28rem;
 }
 #card-person {
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    width: 60%;
+    margin-left: 20%;
+    padding: 2rem;
+}
+#clock {
+    background: linear-gradient(50deg,rgb(94, 98, 126),rgb(70, 153, 153));
+    text-align: center;
+    font-size: 3rem;
+    padding: 0.2rem;
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+    line-height: 10.88rem;
+    color: cornsilk;
 }
