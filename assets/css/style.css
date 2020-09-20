@@ -13,17 +13,23 @@ body {
 /* ===============================
 nav
 ================================== */
-nav.navbar-person {
-    padding: 25px 0;
-    background: rgb(59, 67, 138);
+.navbar-person {
+    padding: 8px 0;
+    background-color: rgb(56, 134, 82);
 }
 #text-brand {
     color: rgb(236, 230, 230);
 }
 #text-brand:hover {
-    color: rgb(78, 127, 184);
+    color: rgb(23, 102, 38);
 }
 
 /* ====================================
 body
 ======================================*/
+#mainclass {
+    margin-top: 2rem;
+}
+#card-person {
+    align-items: center;
+}
