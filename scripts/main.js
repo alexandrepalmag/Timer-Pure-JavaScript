@@ -1,7 +1,5 @@
 document.addEventListener('click', e => {
 
-    console.log(e.srcElement.id)
-
     el = e.srcElement.id
 
     switch (el) {
