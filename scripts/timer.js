@@ -9,20 +9,16 @@ timerC = (() => {
     let theTimer
 
     timerC = {
-        start: (value) => { startTimer(value) },
-        pause: () => { pauseTimer() },
-        clear: (value2) => { clearTimer(value2) }
+        start: value => startTimer(value),
+        pause: () => pauseTimer(),
+        clear: (value2) => clearTimer(value2)
     }
 
-    function startTimer(arg) {
-        theTimer = setInterval(() => { timer(arg) }, 1000)
-    }
+    const startTimer = (arg) => theTimer = setInterval(() => { timer(arg) }, 1000)
 
-    function pauseTimer() {
-        clearInterval(theTimer)
-    }
+    const pauseTimer = () => clearInterval(theTimer)
 
-    function clearTimer(arg2) {
+    const clearTimer = (arg2) => {
         let argThis = arg2
         clearInterval(theTimer)
         theSeconds = 0
@@ -32,7 +28,7 @@ timerC = (() => {
 
     }
 
-    function timer(argNow) {
+    const timer = (argNow) => {
         let arg = argNow
         theSeconds++
 
