@@ -1,1 +1,1 @@
-# Timer-Pure-JavaScript
+# Timer with Pure JavaScript
